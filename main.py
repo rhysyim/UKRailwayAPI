@@ -2,6 +2,7 @@ from flask import Flask
 from flask_restful import Api, Resource
 import urllib.request as ul
 from bs4 import BeautifulSoup as soup
+import datetime
 
 app = Flask(__name__)
 api = Api(app)
@@ -44,7 +45,7 @@ class arrival(Resource):
         except:
             return {"error": "input error"}
         try:
-            response = {}
+            response = []
 
             url = 'https://ojp.nationalrail.co.uk/service/ldbboard/dep/' + stationCode.upper()
             req = ul.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -57,7 +58,6 @@ class arrival(Resource):
             departureBoard = itemlocator[0]
 
             serviceLocator = departureBoard.tbody.findAll('tr')
-            counter = 0
             for i in serviceLocator:
                 infoLocator = i.findAll('td')
                 time = infoLocator[0].text
@@ -66,8 +66,7 @@ class arrival(Resource):
                 status = infoLocator[2].text
                 status = " ".join(status.split())
                 platform = infoLocator[3].text
-                response[counter] = {"time": time, "destination": destination, "status": status, "platform": platform}
-                counter = counter + 1
+                response.append({"time": time, "destination": destination, "status": status, "platform": platform})
             return response
         except:
             return {"error": "station not found"}
