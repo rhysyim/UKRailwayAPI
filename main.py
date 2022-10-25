@@ -11,8 +11,10 @@ class stationCode(Resource):
     def get(self, name):
         try:
             stationName = str(name)
+            if len(stationName) != 3:
+                return {}, 400
         except:
-            return {"error":"input error"}
+            return {}, 400
         
         firstCharacter = stationName[0].upper()
 
@@ -36,14 +38,16 @@ class stationCode(Resource):
                 name = info[0].text
                 if name.lower().startswith(stationName.lower()):
                     return {"stationName": info[0].text, "code": info[2].text}
-        return {"error": "station not found"}
+        return {}, 404
         
 class arrival(Resource):
     def get(self, code):
         try:
             stationCode = str(code)
+            if len(stationCode) != 3:
+                return {}, 400
         except:
-            return {"error": "input error"}
+            return {}, 400
         try:
             response = []
 
@@ -69,7 +73,7 @@ class arrival(Resource):
                 response.append({"time": time, "destination": destination, "status": status, "platform": platform})
             return response
         except:
-            return {"error": "station not found"}
+            return {}, 404
 
 api.add_resource(stationCode, "/code/<string:name>")
 api.add_resource(arrival, "/arrival/<string:code>")
