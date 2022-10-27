@@ -10,3 +10,10 @@ API for retrieving railway data of England, Scotland and Wales
 National Rail - https://www.nationalrail.co.uk/
 
 Wikipedia - UK Railway Stations - https://en.wikipedia.org/wiki/UK_railway_stations
+
+## Modules and Packages
+- Flask
+- Flask RESTful
+- Urllib
+- Beautiful Soup
+- Datetime
