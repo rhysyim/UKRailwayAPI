@@ -1,4 +1,4 @@
-# pyUKRailwayAPI
+# UKRailwayAPI
 API for retrieving railway data of England, Scotland and Wales
 
 ## Usage
