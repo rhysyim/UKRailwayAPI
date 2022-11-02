@@ -2,7 +2,6 @@ from flask import Flask
 from flask_restful import Api, Resource
 import urllib.request as ul
 from bs4 import BeautifulSoup as soup
-import datetime
 
 app = Flask(__name__)
 api = Api(app)
