@@ -6,7 +6,7 @@ API for retrieving railway data of England, Scotland and Wales
 
 /arrival/[station code] - For station arrivals with station code
 
-## API Reference
+## Web Scraping Reference
 National Rail - https://www.nationalrail.co.uk/
 
 Wikipedia - UK Railway Stations - https://en.wikipedia.org/wiki/UK_railway_stations
