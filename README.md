@@ -1,5 +1,5 @@
 # UKRailwayAPI
-API for retrieving railway data of England, Scotland and Wales
+REST API for retrieving railway data of England, Scotland and Wales
 
 ## Usage
 /code/[station name] - For station code with station name
