@@ -30,7 +30,7 @@ REST API for retrieving railway data of England, Scotland and Wales
 ```
 ### /history/[departureStation]/[arrivalStation]/[date]
 ```
-/history/London+Liverpool+Street+(LST)/London+Paddington+(PAD)/01%2F12%F2022
+/history/London Liverpool Street (LST)/London Paddington (PAD)/01%2F12%F2022
 
 [{
 "operator": "XR",
