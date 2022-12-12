@@ -7,8 +7,8 @@ REST API for retrieving railway data of England, Scotland and Wales
 /code/London Liverpool Street
 
 {
-"stationName": "London Liverpool Street", 
-"code": "LST"
+  "stationName": "London Liverpool Street",
+  "code": "LST"
 }
 ```
 ### /arrival/[station code] - For station arrivals with station code
@@ -16,32 +16,36 @@ REST API for retrieving railway data of England, Scotland and Wales
 /arrival/LST
 
 [
-{"time": "22:33", 
-"destination": "London Paddington", 
-"status": "On time", 
-"platform": "B"
-}, 
-{"time": "22:39", 
-"destination": "Abbey Wood", 
-"status": "On time", 
-"platform": "A"}
+  {
+    "time": "22:33",
+    "destination": "London Paddington",
+    "status": "On time",
+    "platform": "B"
+  },
+  {
+    "time": "22:39",
+    "destination": "Abbey Wood",
+    "status": "On time",
+    "platform": "A"
+  }
 ]
-
 ```
 ### /history/[departureStation]/[arrivalStation]/[date]
 ```
 /history/London Liverpool Street (LST)/London Paddington (PAD)/01%2F12%F2022
 
-[{
-"operator": "XR",
-"departureStation": "London Liverpool Street (LST)",
-"arrivalStation": "London Paddington (PAD)",
-"scheduledDeparture": "06:12",
-"scheduledArrival": "06:23",
-"duration": "11m",
-"actualArrival": "06:23",
-"late": 0
-}]
+[
+  {
+    "operator": "XR",
+    "departureStation": "London Liverpool Street (LST)",
+    "arrivalStation": "London Paddington (PAD)",
+    "scheduledDeparture": "06:12",
+    "scheduledArrival": "06:23",
+    "duration": "11m",
+    "actualArrival": "06:23",
+    "late": 0
+  }
+]
 ```
 
 ## Web Scraping Reference
