@@ -34,7 +34,7 @@ https://uk-railway-api.rhysyim.repl.co/arrival/LST
 ```
 ### /history/[departureStation]/[arrivalStation]/[date]
 ```
-https://uk-railway-api.rhysyim.repl.co/history/London Liverpool Street (LST)/London Paddington (PAD)/01-12-2022
+https://uk-railway-api.rhysyim.repl.co/history/London+Liverpool+Street+(LST)/London+Paddington+(PAD)/01-12-2022
 
 [
   {
