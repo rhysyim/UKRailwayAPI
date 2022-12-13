@@ -4,7 +4,7 @@ REST API for retrieving railway data of England, Scotland and Wales
 ## Usage
 ### Base URL
 https://uk-railway-api.rhysyim.repl.co
-### /code/[station name] - For station code with station name
+### /code/[station name] - Station code with station name
 ```
 https://uk-railway-api.rhysyim.repl.co/code/London Liverpool Street
 
@@ -13,7 +13,7 @@ https://uk-railway-api.rhysyim.repl.co/code/London Liverpool Street
   "code": "LST"
 }
 ```
-### /arrival/[station code] - For station arrivals with station code
+### /arrival/[station code] - Station arrivals with station code
 ```
 https://uk-railway-api.rhysyim.repl.co/arrival/LST
 
