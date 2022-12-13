@@ -32,7 +32,7 @@ https://uk-railway-api.rhysyim.repl.co/arrival/LST
   }
 ]
 ```
-### /history/[departureStation]/[arrivalStation]/[date]
+### /history/[departureStation]/[arrivalStation]/[date] - Train arrival history for 6 months
 ```
 https://uk-railway-api.rhysyim.repl.co/history/London+Liverpool+Street+(LST)/London+Paddington+(PAD)/01-12-2022
 
