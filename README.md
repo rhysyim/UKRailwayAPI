@@ -1,4 +1,4 @@
-# UKRailwayAPI
+# GBRailwayAPI
 REST API for retrieving railway data of England, Scotland and Wales
 
 ## Usage
